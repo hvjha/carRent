@@ -1,0 +1,153 @@
+ /* .CarCard {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px); 
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .CarCard img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .CarCard h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .CarCard p {
+    font-size: 14px;
+    color: #777;
+  }  */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,200;1,600&family=Poppins:wght@400;500&display=swap');
+:root{
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+
+  .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.box-container .box{
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    overflow:hidden;
+    background:#fff;
+    flex:1 1 30rem;
+    width: 25rem;
+}
+
+.box-container .box .image-container{
+    overflow:hidden;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    margin: auto;
+}
+
+.box-container .box .image-container img{
+    width:25rem;
+    height:20rem;
+    object-fit: cover;
+    transition: .2s linear;
+    margin:1rem 1rem ;
+    border-radius: 5px;
+}
+
+.box-container .box:hover .image-container img{
+    transform: scale(1.1);
+}
+
+.box-container .box .content{
+    margin-top: -3.5rem;
+    padding:1.5rem;
+}
+.box-container .box .content .location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-container .box .content .location h3{
+    padding: 1rem 0;
+    display: flex;
+    font-size: 2rem;
+    color:#333;
+    font-weight: 500;
+}
+.box-container .box .content .location .lef{
+   display: flex;
+   border: 1px dotted black;
+   margin: 2rem;
+   border-radius: 1rem;
+   padding:.1rem .5rem;
+}
+.buttons{
+    display: flex;
+}
+
+
+
+  .dets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .dets div {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .dets span {
+    font-size: 2rem;
+    margin-right: 0.5rem; 
+  }
+  
+  .dets p {
+    border-radius: 0.5rem; 
+    margin: .5rem;;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+  }
+  
+  .buttons h4 {
+    margin: 0; 
+    border-radius: .5rem;
+  }
+  
+  .buttons .icon {
+    display: flex;
+    width:2rem;
+    font-size: 2rem;
+    padding: .2rem;
+    align-items: center;
+    margin: auto;
+    margin-right: rem;
+    background: var(--light-red);
+    border-radius: .5rem;
+  }
+  
+  .buttons .btn {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+
+  /* You can add more specific styles as needed */
+  
